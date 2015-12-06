@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS3 Animations and Transitions with Jquery</title>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+	  <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+<h1>Inspired-Evolution.com</h1>
+<img src="img/icon-sandbox_small.png" height="79" width="79" alt="Sandbox Icon"/>
+<span class="SandboxText">Sandbox - CSS3 Transitions case study</span>
+</header>
+<div id="CaseStudyInfo">
+<div class='back'>
+ <button type="button" class="btn btn-primary"><a href="../../index.php">Back to Inspired-Evolution.com</a></button>
+</div><!--end back div-->
+
+<h2>CASE STUDY INFO:</h2>
+    <p>
+ This is just me playing around with CSS Animations and Transitions (and having a lot of fun, I might add)</p>
+<p>The cards are marked up in HTML 5 as list items within an Un-ordered list.</p>
+<p>I am selecting the list items using ul li:nth-child(odd) and ul li:nth-child(even)</p>
+    <p>
+    The cards are set at an angle using the CSS3 2D rotate transform, the opacity is set at .5 and when you focus over a card it moves to full opacity. The cards have a shadowed background using box-shadow, the header text on each card is using the text-shadow feature, the cards scale and rotate when you focus your mouse over them, and the CSS3 transition is timed to be .45 seconds linear.  
+    </p>
+<p>Lastly, the cards fade out on click with some Jquery functionality</p>
+<p>Pretty cool stuff!</p>
+    <p>You may access the code used in this case study via my <a class="External" href="https://github.com/webguync/Case-Study-pulling-in-JSON-data-via-JQuery-getJSON--" title="GitHub Account">GitHub account</a>.</p>
+</div><!--end case study info-->
+<div class='container-fluid'>
+  <ul>
+    <li>
+      <a href="#">
+        <h2>Ace of Clubs</h2>
+<img class="img-responsive" src="cards/Ace_Clubs.png" alt="Ace of Clubs" title="Ace of Clubs" />
+        <p>Ace in the hole!</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Ace of Diamonds</h2>
+        <img class="img-responsive" src="cards/Ace_Diamonds.png" alt="Ace of Diamonds" title="Ace of Diamonds" />
+        <p>Diamonds are a girl's best friend!</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Jack of Diamonds</h2>
+        <img class="img-responsive" src="cards/Jack_Diamonds.png" alt="Jack of Diamonds" title="Jack of Diamonds" />
+        <p>Diamonds are forever</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>King of Hearts</h2>
+         <img class="img-responsive" src="cards/King_Hearts.png" alt="King of Hearts" title="King of Hearts" />
+        <p>Kings stab you in your heart</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>King of Spades</h2>
+         <img class="img-responsive" src="cards/King_Spades.png" alt="King of Spades" title="King of Spades" />
+        <p>Kings have money in spades</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Queen of Clubs</h2>
+         <img class="img-responsive" src="cards/Queen_Clubs.png" alt="Queen of Clubs" title="Queen of Clubs" />
+       <p>Any club needs a Queen</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Seven of Spades</h2>
+        <img class="img-responsive" src="cards/Seven_Spades.png" alt="Seven of Spades" title="Seven of Spades" />
+       <p>Spades come in sevens</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Ten of Hearts</h2>
+        <img class="img-responsive" src="cards/Ten_Hearts.png" alt="Ten of Hearts" title="Ten of Hearts" />
+       <p>Hearts afire in tens</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <h2>Three of Spades</h2>
+        <img class="img-responsive" src="cards/Three_Spades.png" alt="Three of Spades" title="Three of Spades" />
+         <p>A three in a spade</p>
+      </a>
+    </li>
+      <li>
+       <a href="#">
+        <h2>Two of Diamonds</h2>
+        <img class="img-responsive" src="cards/Two_Diamonds.png" alt="Two of Diamonds" title="Two of Diamonds" />
+         <p>Diamonds can cut glass</p>
+    </a>
+    </li>
+  </ul>
+</div><!--end container fluid-->
+<footer>
+<p>copyright 2015 Inspired-Evolution.com. All rights reserved</p>
+</footer>
+<script>
+$(document).ready (function(){
+$("ul li a").click (function(){
+$(this).fadeOut(500), (function(){
+ alert("You just erased the _ card!");
+});
+});
+});
+</script>
+</body>
+</html>
